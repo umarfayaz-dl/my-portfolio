@@ -1,0 +1,92 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 50px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e3a5f);
+    color: white;
+}
+
+/* Main heading */
+h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+/* Project container */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Project cards */
+.project-list li {
+    list-style: none;
+}
+
+/* Project links */
+.project-list a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease,
+                background-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.project-list a:hover {
+    transform: translateY(-8px);
+    background-color: #2563eb;
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.4);
+}
+
+/* Click effect */
+.project-list a:active {
+    transform: scale(0.97);
+}
+
+/* Tablet and mobile */
+@media (max-width: 700px) {
+    body {
+        padding: 35px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+        line-height: 1.4;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .project-list a {
+        min-height: 110px;
+        font-size: 18px;
+    }
+}

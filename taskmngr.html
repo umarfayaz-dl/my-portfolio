@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Task Manager</title>
+  <link rel="stylesheet" href="taskmngr.css">
+</head>
+<body>
+  <main class="app">
+    <section class="task-card">
+      <div class="heading">
+        <p>Stay organised</p>
+        <h1>My Daily Tasks</h1>
+        <span id="taskCount">0 tasks</span>
+      </div>
+
+      <form id="taskForm">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Enter a new task"
+          maxlength="60"
+          required
+        >
+        <button type="submit">Add Task</button>
+      </form>
+
+      <ul id="taskList"></ul>
+
+      <div class="empty-state" id="emptyState">
+        <div>✓</div>
+        <p>No tasks yet. Add your first task above.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="taskmngr.js"></script>
+</body>
+</html>

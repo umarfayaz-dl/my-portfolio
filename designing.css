@@ -1,0 +1,175 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap");
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "DM Sans", sans-serif;
+    background:
+        radial-gradient(circle at top left, rgba(194, 135, 69, 0.18), transparent 35%),
+        #f7f3ed;
+    color: #2f2119;
+    padding: 70px 7%;
+}
+
+/* Header */
+
+.hero {
+    max-width: 750px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.small-title {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #a4672c;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    margin-bottom: 18px;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.7rem, 6vw, 5rem);
+    line-height: 1;
+    color: #39251a;
+}
+
+.description {
+    max-width: 620px;
+    margin: auto;
+    color: #79675c;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Gallery */
+
+.design-gallery {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Cards */
+
+.design-card {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.86);
+    border: 1px solid rgba(91, 59, 39, 0.12);
+    border-radius: 24px;
+    box-shadow: 0 15px 45px rgba(67, 42, 27, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.design-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 24px 55px rgba(67, 42, 27, 0.18);
+}
+
+/* Image section */
+
+.image-container {
+    height: 390px;
+    overflow: hidden;
+    background-color: #e9dfd3;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.design-card:hover img {
+    transform: scale(1.06);
+}
+
+/* Card text */
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content span {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #b57539;
+    font-size: 0.73rem;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.card-content h2 {
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 1.65rem;
+    color: #3b291f;
+}
+
+.card-content p {
+    color: #7c6a5f;
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 65px;
+    text-align: center;
+    color: #8d796d;
+    font-size: 0.9rem;
+}
+
+/* Tablet */
+
+@media (max-width: 950px) {
+    .design-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+    body {
+        padding: 50px 20px;
+    }
+
+    .hero {
+        margin-bottom: 35px;
+    }
+
+    .design-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .image-container {
+        height: auto;
+    }
+
+    .image-container img {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .card-content {
+        padding: 22px;
+    }
+}

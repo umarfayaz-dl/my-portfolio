@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mountain Brew Café</title>
+  <link rel="stylesheet" href="cafe.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="#" class="logo">Mountain<span>Brew</span></a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <p class="eyebrow">Fresh coffee. Warm moments.</p>
+        <h1>Your daily coffee, served with care.</h1>
+        <p class="hero-text">
+          A small neighbourhood café offering fresh coffee, snacks and a calm place to relax.
+        </p>
+        <a href="#menu" class="btn">View Menu</a>
+      </div>
+    </section>
+
+    <section id="menu" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p>Popular choices</p>
+          <h2>Simple menu, great taste</h2>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="icon">☕</div>
+            <h3>Hot Coffee</h3>
+            <p>Espresso, cappuccino and creamy latte prepared fresh.</p>
+            <strong>From ₹120</strong>
+          </article>
+
+          <article class="card">
+            <div class="icon">🥪</div>
+            <h3>Quick Bites</h3>
+            <p>Sandwiches, fries and light snacks for any time of day.</p>
+            <strong>From ₹90</strong>
+          </article>
+
+          <article class="card">
+            <div class="icon">🍰</div>
+            <h3>Sweet Treats</h3>
+            <p>Cakes and desserts that pair perfectly with your coffee.</p>
+            <strong>From ₹100</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <span><img src="D:\PORTFOLIO\IMAGES\Coffee Shop.png" alt="MountainBrew Logo"></span>
+        </div>
+
+        <div>
+          <p class="eyebrow">About us</p>
+          <h2>A comfortable café made for everyone.</h2>
+          <p>
+            Mountain Brew is a practice business website created to demonstrate a clean,
+            responsive layout using HTML, CSS and basic JavaScript.
+          </p>
+          <a href="#contact" class="text-link">Visit us →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container contact-box">
+        <div>
+          <p class="eyebrow">Come say hello</p>
+          <h2>Open every day from 9 AM to 9 PM</h2>
+        </div>
+        <a href="mailto:hello@example.com" class="btn light-btn">Contact Café</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Mountain Brew Café</p>
+      <p>Practice project by Umar Fayaz Bhat</p>
+    </div>
+  </footer>
+
+  <script src="cafe.js"></script>
+</body>
+</html>
